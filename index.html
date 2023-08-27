@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Animated Partfolio Website</title>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My</span>Portfolio</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt blanditiis sunt saepe temporibus laudantium quasi, quaerat, debitis rerum non deserunt neque dignissimos, magni quia consectetur! Possimus ducimus est magni.</p>
+            <button>Hire Me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Let's Chat</button>
+        </div>
+        <img src="img/IMG_0177.JPG" class="men">
+            <ul class="sci">
+                <li><a href="https://www.instagram.com/davlatbek.____/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://mail.google.com/mail/davlatyuldashov404@gmail.com/"><ion-icon name="mail-outline"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/davlatbekyuldashov1302/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="daynight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typingText = new Typed("#text", {
+            strings : ["Davlat", "Designer", "Coder", "Programmer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 1000
+        })
+
+
+
+
+        let banner = document.querySelector('.banner');
+        let daynight = document.querySelector('.daynight');
+        daynight.onclick = function(){
+            banner.classList.toggle('night')
+        }
+    </script>
+</body>
+</html>
